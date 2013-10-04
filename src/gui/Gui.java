@@ -1,5 +1,6 @@
 package gui;
 
+import model.Scale;
 import model.TemperatureUnicode;
 
 import javax.swing.*;
@@ -27,18 +28,16 @@ public class Gui {
 
 	private JSlider temperatureSlider;
 
-	private static final int MAX_FAHRENHEIT_VALUE = 150;
-
-	private static final int MIN_FAHRENHEIT_VALUE = -150;
-
 	private JCheckBox chkBoxIsRounded;
 
 	private boolean isRounded = false;
 
 	private TemperatureValuesMap temperatureValuesMap;
 
+    private Scale scale;
 
-	public Gui(){
+	public Gui(Scale scale){
+        this.scale = scale;
 		parentFrame = new JFrame();
 		masterComponentPanel = new JPanel(new BorderLayout());
 		southPanel = new JPanel();
@@ -50,7 +49,7 @@ public class Gui {
 		lblKelvinUnicode = new JLabel(Character.toString(TemperatureUnicode.DEGREE_K));
 		lblKelvinValue = new JLabel("0");
 		temperatureValuesMap = new TemperatureValuesMap();
-		temperatureSlider = new JSlider(MIN_FAHRENHEIT_VALUE, MAX_FAHRENHEIT_VALUE);
+		temperatureSlider = new JSlider((int)scale.getMinimum(), (int)scale.getMaximum());
 		chkBoxIsRounded = new JCheckBox("Round");
 		graphPanel = new GraphPanel();
 	}

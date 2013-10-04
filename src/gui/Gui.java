@@ -49,7 +49,7 @@ public class Gui {
 		lblKelvinUnicode = new JLabel(Character.toString(TemperatureUnicode.DEGREE_K));
 		lblKelvinValue = new JLabel("0");
 		temperatureValuesMap = new TemperatureValuesMap();
-		temperatureSlider = new JSlider((int)scale.getMinimum(), (int)scale.getMaximum());
+		temperatureSlider = new JSlider(scale.getMinimum(), scale.getMaximum());
 		chkBoxIsRounded = new JCheckBox("Round");
 		graphPanel = new GraphPanel();
 	}

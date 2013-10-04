@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2fea07c-b369-4816-aa11-e0414ad9608e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/t_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/AppStart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/GraphPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/Gui.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/TemperatureValuesMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/FahrenheitToCelsius.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/FahrenheitToKelvin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/TemperatureConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/TemperatureUnicode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\logic\FahrenheitToCelsius.java" afterPath="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java" />
+      <change type="MOVED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\logic\FahrenheitToKelvin.java" afterPath="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java" />
     </list>
     <ignored path="Temperature_Converter_Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,10 +62,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FahrenheitToCelsius.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/logic/FahrenheitToCelsius.java">
+      <file leaf-file-name="FahrenheitToCelsius.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="1" selection-start="62" selection-end="62" vertical-scroll-proportion="0.12927757">
+            <state line="10" column="22" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FahrenheitToKelvin.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemperatureConverter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/logic/TemperatureConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="0.12208258">
               <folding />
             </state>
           </provider>
@@ -90,6 +99,14 @@
   <component name="Git.Settings">
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/logic/FahrenheitToCelsius.java" />
+        <option value="$PROJECT_DIR$/src/logic/FahrenheitToKelvin.java" />
+      </list>
+    </option>
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -152,24 +169,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,7 +287,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="840" height="1010" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -297,9 +296,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5162095" sideWeight="0.6635404" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20024125" sideWeight="0.67049366" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33645955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -343,9 +342,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/logic/FahrenheitToCelsius.java">
+    <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="62" selection-end="62" vertical-scroll-proportion="0.12927757">
+        <state line="10" column="22" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/TemperatureConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="0.12208258">
           <folding />
         </state>
       </provider>

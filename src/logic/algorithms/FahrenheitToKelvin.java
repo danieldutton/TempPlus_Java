@@ -1,4 +1,4 @@
-package logic;
+package logic.algorithms;
 
 
 import logic.interfaces.IConversionFormula;
@@ -6,6 +6,9 @@ import logic.interfaces.IConversionFormula;
 public class FahrenheitToKelvin implements IConversionFormula {
 
     public double Convert(double fahrenheitTemp) {
-        return 0;  //To change body of implemented methods use File | Settings | File Templates.
+
+        double result = (fahrenheitTemp + 459.67)/1.8;
+
+        return result;
     }
 }

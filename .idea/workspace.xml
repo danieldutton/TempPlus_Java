@@ -2,34 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2fea07c-b369-4816-aa11-e0414ad9608e" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\TemperatureConverter.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\logic\TemperatureConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\logic\algorithms\FahrenheitToCelsius.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\logic\algorithms\FahrenheitToKelvin.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\logic\interfaces\IConversionFormula.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\model\TemperatureUnicode.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\AppStart$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\AppStart.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\GraphPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\Gui$Converter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\Gui$GraphPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\Gui$IsRounded.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\Gui.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\out\production\TemperatureConverter\ui\TemperatureValuesMap.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\logic\TemperatureConverter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\logic\algorithms\FahrenheitToCelsius.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\logic\algorithms\FahrenheitToKelvin.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\logic\interfaces\IConversionFormula.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\model\TemperatureUnicode.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\ui\AppStart.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\ui\GraphPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\ui\Gui.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\src\ui\TemperatureValuesMap.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Dan\Documents\GitHub\Temperature_Converter_Java\TemperatureConverter.iml" afterPath="$PROJECT_DIR$/Temperature_Converter_Java.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/t_icon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/AppStart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/GraphPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/Gui.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/TemperatureValuesMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/FahrenheitToCelsius.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/FahrenheitToKelvin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logic/TemperatureConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/TemperatureUnicode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Temperature_Converter_Java.iws" />
@@ -86,6 +68,19 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Temperature_Converter_Java" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="FahrenheitToCelsius.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/logic/FahrenheitToCelsius.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="1" selection-start="62" selection-end="62" vertical-scroll-proportion="0.12927757">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -160,6 +155,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Temperature_Converter_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Temperature_Converter_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -168,12 +181,14 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AppStart">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -240,7 +255,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="AppStart" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gui.AppStart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Temperature_Converter_Java" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.AppStart" />
+    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -255,17 +288,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="0" y="0" width="840" height="1010" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24969843" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5162095" sideWeight="0.6635404" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33645955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -307,6 +341,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/logic/FahrenheitToCelsius.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="1" selection-start="62" selection-end="62" vertical-scroll-proportion="0.12927757">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 

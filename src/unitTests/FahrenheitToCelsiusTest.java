@@ -1,19 +1,26 @@
 package unitTests;
 
+import logic.algorithms.FahrenheitToCelsius;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 public class FahrenheitToCelsiusTest {
-    @org.junit.Before
+
+    private FahrenheitToCelsius sut;
+
+    @Before
     public void setUp() throws Exception {
-
+        sut = new FahrenheitToCelsius();
     }
 
-    @org.junit.After
+    @Test
+    public void testConvert(){
+        sut = null;
+    }
+
+    @After
     public void tearDown() throws Exception {
-
-    }
-
-    @org.junit.Test
-    public void testConvert() throws Exception {
-
+        sut = null;
     }
 }

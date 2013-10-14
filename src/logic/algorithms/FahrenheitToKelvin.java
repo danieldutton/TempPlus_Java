@@ -5,10 +5,10 @@ import logic.interfaces.IConversionFormula;
 
 public class FahrenheitToKelvin implements IConversionFormula {
 
-    public double Convert(double fahrenheitTemp) {
+    public double Convert(double fahrenheitTemp, boolean isRounded) {
 
-        double result = (fahrenheitTemp + 459.67)/1.8;
+        if(isRounded) return (fahrenheitTemp + 459.67)/1.8;
 
-        return result;
+        else return Math.round(fahrenheitTemp + 459.67)/1.8;
     }
 }

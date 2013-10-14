@@ -10,7 +10,7 @@ public class TemperatureConverter {
         this.conversionFormula = conversionFormula;
     }
 
-    public double convert(double fahrenheitTemp){
-        return conversionFormula.Convert(fahrenheitTemp);
+    public double convert(double fahrenheitTemp, boolean isRounded){
+        return conversionFormula.Convert(fahrenheitTemp, isRounded);
     }
 }

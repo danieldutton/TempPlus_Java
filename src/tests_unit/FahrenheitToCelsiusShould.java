@@ -1,22 +1,22 @@
-package unitTests;
+package tests_unit;
 
-import logic.algorithms.FahrenheitToKelvin;
+import logic.algorithms.FahrenheitToCelsius;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FahrenheitToKelvinTest {
+public class FahrenheitToCelsiusShould {
 
-    private FahrenheitToKelvin sut;
+    private FahrenheitToCelsius sut;
 
     @Before
     public void setUp() throws Exception {
-        sut = new FahrenheitToKelvin();
+        sut = new FahrenheitToCelsius();
     }
 
     @Test
-    public void testConvert() throws Exception {
-
+    public void testConvert(){
+        sut = null;
     }
 
     @After

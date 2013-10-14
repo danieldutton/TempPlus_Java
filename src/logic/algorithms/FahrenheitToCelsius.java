@@ -4,10 +4,10 @@ import logic.interfaces.IConversionFormula;
 
 public class FahrenheitToCelsius implements IConversionFormula {
 
-    public double Convert(double fahrenheitTemp) {
+    public double Convert(double fahrenheitTemp, boolean isRounded) {
 
-        double result = ((fahrenheitTemp - 32) * 5/9);
+        if(isRounded) return ((fahrenheitTemp - 32) * 5/9);
 
-        return result;
+        else return Math.round(((fahrenheitTemp - 32) * 5/9));
     }
 }

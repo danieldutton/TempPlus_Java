@@ -1,11 +1,10 @@
 package gui;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.util.Hashtable;
 
-public class TemperatureValuesMap extends Hashtable<Integer, JLabel> {
+public class TemperatureMap extends Hashtable<Integer, JLabel> {
 
 	private JLabel lblNegative150;
 	private JLabel lblNegative100;
@@ -18,7 +17,7 @@ public class TemperatureValuesMap extends Hashtable<Integer, JLabel> {
 	private JLabel lblPositive150;
 
 
-	public TemperatureValuesMap(){
+	public TemperatureMap(){
 
         initLabelValues();
         styleLabels();

@@ -1,42 +1,40 @@
 package model;
 
 
-public class Temperature<T> {
+public class Temperature {
 
-    public T getFahrenheit() {
+    private double fahrenheit;
+    private double celsius;
+    private double kelvin;
+
+
+    public Temperature(double fahrenheit, double celsius, double kelvin){
+        this.fahrenheit = fahrenheit;
+        this.kelvin = kelvin;
+        this.celsius = celsius;
+    }
+
+    public double getFahrenheit() {
         return fahrenheit;
     }
 
-    public void setFahrenheit(T fahrenheit) {
+    public void setFahrenheit(double fahrenheit) {
         this.fahrenheit = fahrenheit;
     }
 
-    public T getCelcius() {
-        return celcius;
+    public double getCelsius() {
+        return celsius;
     }
 
-    public void setCelcius(T celcius) {
-        this.celcius = celcius;
+    public void setCelsius(double celcius) {
+        this.celsius = celcius;
     }
 
-    public T getKelvin() {
+    public double getKelvin() {
         return kelvin;
     }
 
-    public void setKelvin(T kelvin) {
+    public void setKelvin(double kelvin) {
         this.kelvin = kelvin;
     }
-
-    private T fahrenheit;
-
-    private T celcius;
-
-    private T kelvin;
-
-    public Temperature(T fahrenheit, T celcius, T kelvin){
-        this.fahrenheit = fahrenheit;
-        this.kelvin = kelvin;
-        this.celcius = celcius;
-    }
-
 }

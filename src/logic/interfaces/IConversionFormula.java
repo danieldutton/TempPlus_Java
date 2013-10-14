@@ -2,5 +2,5 @@ package logic.interfaces;
 
 public interface IConversionFormula {
 
-    public double Convert(double fahrenheitTemp);
+    public double Convert(double fahrenheitTemp, boolean isRounded);
 }

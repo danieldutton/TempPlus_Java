@@ -1,13 +1,10 @@
-package unitTests;
-
+package tests_unit;
 
 import logic.algorithms.FahrenheitToCelsius;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import static org.junit.Assert.*;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,16 +24,15 @@ public class ParameterisedTests {
     @Parameterized.Parameters
     public static List<Object[]>data(){
         return Arrays.asList(new Object[][]{
-            {5,5},
-            {5,10},
-            {6,4}
+            {5.0,5.0},
+            {5.0,10.0},
+            {6.0,4.0}
         });
     }
 
     @Test
-    public void test(){
-
-        assertEquals(expected, fahrenheitToCelsius.Convert(input));
+    public void testQuotes(){
+        assertEquals(expected, fahrenheitToCelsius.Convert(input, true));
     }
 
 }

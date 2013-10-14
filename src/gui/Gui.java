@@ -1,7 +1,13 @@
 package gui;
 
+import logic.TemperatureConverter;
+import logic.algorithms.FahrenheitToCelsius;
+import logic.algorithms.FahrenheitToKelvin;
 import model.Scale;
+import model.Temperature;
 import model.TemperatureUnicode;
+import observer.Observer;
+import observer.Subject;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -9,9 +15,11 @@ import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.*;
+import java.util.List;
 
-public class Gui {
-
+public class Gui implements Subject
+{
 	private JFrame parentFrame;
 
 	private JPanel masterComponentPanel;
@@ -30,17 +38,20 @@ public class Gui {
 
 	private JCheckBox chkBoxIsRounded;
 
-	private boolean isRounded = false;
+	private TemperatureMap temperatureValuesMap;
 
-	private TemperatureValuesMap temperatureValuesMap;
+    private Temperature temperature;
 
     private Scale scale;
 
-	public Gui(Scale scale){
+
+	public Gui(Scale scale, Temperature temperature){
         this.scale = scale;
+        this.temperature = temperature;
 		parentFrame = new JFrame();
 		masterComponentPanel = new JPanel(new BorderLayout());
 		southPanel = new JPanel();
+        graphPanel = new GraphPanel(temperature);
 
 		lblFahrenheitUnicode = new JLabel(Character.toString(TemperatureUnicode.DEGREE_F));
 		lblFahrenheitValue = new JLabel("0");
@@ -48,39 +59,54 @@ public class Gui {
 		lblCelsiusValue = new JLabel("0");
 		lblKelvinUnicode = new JLabel(Character.toString(TemperatureUnicode.DEGREE_K));
 		lblKelvinValue = new JLabel("0");
-		temperatureValuesMap = new TemperatureValuesMap();
+		temperatureValuesMap = new TemperatureMap();
 		temperatureSlider = new JSlider(scale.getMinimum(), scale.getMaximum());
 		chkBoxIsRounded = new JCheckBox("Round");
-		graphPanel = new GraphPanel();
 	}
 
 	public void drawGui(){
-
-		graphPanel.setLayout(new GridLayout(4,4));
-
         setCustomFrameIcon();
         InitTemperatureSlider();
 
-		temperatureSlider.addChangeListener(new Converter());
-		chkBoxIsRounded.addActionListener(new IsRounded());
+		addListeners();
 
-		graphPanel.add(lblFahrenheitUnicode);
+		buildGraphPanel();
+		southPanel.add(graphPanel);
+
+		masterComponentPanel.add(temperatureSlider);
+		masterComponentPanel.setBackground(Color.black);
+		southPanel.setBackground(Color.black);
+
+        styleLabels();
+		styleIsRoundedCheckBox();
+        buildToolTips();
+
+		masterComponentPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+		masterComponentPanel.add(BorderLayout.SOUTH,graphPanel);
+		parentFrame.add(masterComponentPanel);
+
+		setParentFrameProperties();
+	}
+
+    private void addListeners(){
+        temperatureSlider.addChangeListener(new Converter());
+		chkBoxIsRounded.addActionListener(new IsRounded());
+    }
+
+    private void buildGraphPanel(){
+        graphPanel.setLayout(new GridLayout(4,4));
+        graphPanel.add(lblFahrenheitUnicode);
 		graphPanel.add(lblFahrenheitValue);
 		graphPanel.add(lblCelciusUnicode);
 		graphPanel.add(lblCelsiusValue);
 		graphPanel.add(lblKelvinUnicode);
 		graphPanel.add(lblKelvinValue);
 		graphPanel.add(chkBoxIsRounded);
-		southPanel.add(graphPanel);
+    }
 
-		masterComponentPanel.add(temperatureSlider);
-
-		masterComponentPanel.setBackground(Color.black);
-		southPanel.setBackground(Color.black);
-		temperatureSlider.setBackground(Color.black);
-		temperatureSlider.setForeground(Color.white);
-
-		lblCelciusUnicode.setForeground(Color.white);
+    private void styleLabels(){
+        lblCelciusUnicode.setForeground(Color.white);
 		lblCelciusUnicode.setToolTipText("Celcius");
 		lblFahrenheitUnicode.setForeground(Color.white);
 		lblFahrenheitUnicode.setToolTipText("Fahrenheit");
@@ -90,28 +116,28 @@ public class Gui {
 		lblFahrenheitValue.setForeground(Color.white);
 		lblCelsiusValue.setForeground(Color.white);
 		lblKelvinValue.setForeground(Color.white);
+    }
 
-		chkBoxIsRounded.setBackground(Color.black);
-		chkBoxIsRounded.setForeground(Color.white);
-		chkBoxIsRounded.setSize(5, 5);
-
-		UIManager.put("ToolTip.background", Color.black);
+    private void buildToolTips(){
+        UIManager.put("ToolTip.background", Color.black);
 		UIManager.put("ToolTip.foreground", Color.white);
 		UIManager.put("ToolTip.font", new Font("trebuchet ms",Font.PLAIN,10));
+    }
 
-
-		masterComponentPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-
-		masterComponentPanel.add(BorderLayout.SOUTH,graphPanel);
-		parentFrame.add(masterComponentPanel);
-
-		parentFrame.setLocationRelativeTo(null);
+    private void setParentFrameProperties(){
+        parentFrame.setLocationRelativeTo(null);
 		parentFrame.setTitle("Temp +");
 		parentFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		parentFrame.setSize(310,195);
+		parentFrame.setSize(310, 195);
 		parentFrame.setResizable(false);
 		parentFrame.setVisible(true);
-	}
+    }
+
+    private void styleIsRoundedCheckBox(){
+        chkBoxIsRounded.setBackground(Color.black);
+		chkBoxIsRounded.setForeground(Color.white);
+		chkBoxIsRounded.setSize(5, 5);
+    }
 
     private void InitTemperatureSlider() {
         temperatureSlider.setLabelTable(temperatureValuesMap);
@@ -120,6 +146,8 @@ public class Gui {
         temperatureSlider.setPaintLabels(true);
         temperatureSlider.setPaintTicks(true);
         temperatureSlider.setBorder(BorderFactory.createEmptyBorder(2, 10, 0, 0));
+        temperatureSlider.setBackground(Color.black);
+		temperatureSlider.setForeground(Color.white);
     }
 
     private void setCustomFrameIcon() {
@@ -132,121 +160,65 @@ public class Gui {
         }
     }
 
+    private List<Observer> observers = new ArrayList<Observer>();
 
-	private float fahrenheit;
-	private float celcius;
-	private float kelvin;
+    public void register(Observer obj) {
+        if(obj == null) throw new NullPointerException("obj");
+        if(!observers.contains(obj)) observers.add(obj);
+    }
 
+    public void unRegister(Observer obj) {
+        observers.remove(obj);
+    }
 
-	public class Converter implements ChangeListener {
+    public void notifyObservers() {
+        for(Observer obj : observers){
+           obj.update(temperature);
+        }
+    }
 
-		public void stateChanged(ChangeEvent arg0) {
+    public Object getUpdate(Observer obj) {
+        return "Message";
+    }
 
-			fahrenheit = temperatureSlider.getValue();
+    public class Converter implements ChangeListener {
 
-			lblFahrenheitValue.setText(String.valueOf(fahrenheit));
+        public void stateChanged(ChangeEvent arg0) {
 
-			lblCelsiusValue.setText(String.valueOf(toCelcius(isRounded)));
+			temperature.setFahrenheit(temperatureSlider.getValue());
 
-			lblKelvinValue.setText(String.valueOf(toKelvin(isRounded)));
+            double fahrenheit = temperatureSlider.getValue();
+            boolean isRounded = chkBoxIsRounded.isSelected();
+
+            Temperature temperatures = calculateTemperatures(fahrenheit, isRounded);
+
+			lblFahrenheitValue.setText(String.valueOf(temperatures.getFahrenheit()));
+			lblCelsiusValue.setText(String.valueOf(temperatures.getCelsius()));
+			lblKelvinValue.setText(String.valueOf(temperatures.getKelvin()));
 		}
 
-		public float toCelcius(boolean rounded){
-			celcius = (fahrenheit - 32) * 5/9F;
-			celcius = (rounded) ? Math.round(celcius):celcius;
-			return celcius;
-		}
+        public Temperature calculateTemperatures(double fahrenheit, boolean isRounded){
 
+            TemperatureConverter tempConverterCel = new TemperatureConverter(new FahrenheitToCelsius());
+            TemperatureConverter tempConverterKel = new TemperatureConverter(new FahrenheitToKelvin());
 
-		public float toKelvin(boolean rounded){
-			final float F_TO_K_CONVERSION = 273.15F;
+            double f = temperatureSlider.getValue();
+            double c = tempConverterCel.convert(f, isRounded);
+            double k = tempConverterKel.convert(f, isRounded);
 
-			kelvin = celcius + F_TO_K_CONVERSION;
-			kelvin = (rounded) ? Math.round(kelvin):kelvin;
-
-			return kelvin;
-		}
+            return new Temperature(f, c, k);
+        }
 	}
-
 
 	public class IsRounded implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
 			if(chkBoxIsRounded.isSelected()){
-				isRounded = true;
+				//calculate temperatures here
 			}
 			else{
-				isRounded = false;
+				//claculate temperatures here
 			}
-		}
-	}
-
-	public class GraphPanel extends JPanel{
-
-		private static final int BAR_HEIGHT = 7;
-
-		private static final int DIVIDER = 3;
-
-		private static final int POS_X_START = 15;
-
-		private static final int NEG_X_START = 130;
-
-
-		public void paintComponent(Graphics g){
-
-			this.setBackground(Color.black);
-
-			super.paintComponent(g);
-
-			if(fahrenheit < 0)
-				drawFahrenheitBarNeg(g);
-			if(celcius < 0)
-				drawCelciusBarNeg(g);
-			if(kelvin < 0)
-				drawKelvinBarNeg(g);
-			if(fahrenheit > 0)
-				drawFahrenheitBarPos(g);
-			if(celcius > 0)
-				drawCelciusBarPos(g);
-			if(kelvin > 0)
-				drawKelvinBarPos(g);
-			repaint();
-		}
-
-
-		public void drawFahrenheitBarPos(Graphics g){
-			g.setColor(Color.yellow);
-			g.fillRect(POS_X_START, 10,(int)fahrenheit / DIVIDER, BAR_HEIGHT);
-		}
-
-
-		public void drawCelciusBarPos(Graphics g){
-			g.setColor(Color.yellow);
-			g.fillRect(POS_X_START, 34,(int)celcius / DIVIDER, BAR_HEIGHT);
-		}
-
-
-		public void drawKelvinBarPos(Graphics g){
-			g.setColor(Color.yellow);
-			g.fillRect(POS_X_START, 58,(int)kelvin / DIVIDER, BAR_HEIGHT);
-		}
-
-
-		public void drawFahrenheitBarNeg(Graphics g){
-			g.setColor(Color.red);
-			g.fillRect(NEG_X_START, 10,(int)fahrenheit / DIVIDER, BAR_HEIGHT);
-		}
-
-
-		public void drawCelciusBarNeg(Graphics g){
-			g.setColor(Color.red);
-			g.fillRect(NEG_X_START, 34, (int)celcius / DIVIDER, 7);
-		}
-
-
-		public void drawKelvinBarNeg(Graphics g){
-			g.setColor(Color.red);
-			g.fillRect(NEG_X_START,58,(int)kelvin / DIVIDER, 7);
 		}
 	}
 }

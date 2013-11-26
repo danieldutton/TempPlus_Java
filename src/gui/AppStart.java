@@ -5,9 +5,11 @@ import model.Temperature;
 import java.awt.*;
 
 public class AppStart {
+
     public static void main(String[] args){
 
-        final Scale scale = new Scale(-150, 150, 3);
+        final Scale scale = new Scale(-150, 150);
+
         final Temperature temperatures = new Temperature(0.00f, 0.00f, 0.00f);
 
 		Runnable runner = new Runnable(){

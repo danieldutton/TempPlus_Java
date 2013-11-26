@@ -114,8 +114,19 @@
       <file leaf-file-name="Scale.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+            <state line="11" column="31" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppStart.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/AppStart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="47" selection-start="197" selection-end="197" vertical-scroll-proportion="0.3148148">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,10 +140,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Temperature.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Temperature.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.02014218">
+            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemperatureUnicode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/TemperatureUnicode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="4" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,14 +172,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/logic/interfaces/IConversionFormula.java" />
         <option value="$PROJECT_DIR$/src/logic/TemperatureConverter.java" />
         <option value="$PROJECT_DIR$/src/unitTests/ParameterisedTests.java" />
         <option value="$PROJECT_DIR$/src/observer/Observer.java" />
-        <option value="$PROJECT_DIR$/src/gui/AppStart.java" />
         <option value="$PROJECT_DIR$/src/tests_unit/FahrenheitToCelsiusShould.java" />
         <option value="$PROJECT_DIR$/src/tests_unit/FahrenheitToKelvinShould.java" />
-        <option value="$PROJECT_DIR$/src/model/TemperatureUnicode.java" />
         <option value="$PROJECT_DIR$/src/observer/Subject.java" />
         <option value="$PROJECT_DIR$/src/tests_unit/ParameterisedTests.java" />
         <option value="$PROJECT_DIR$/src/gui/TemperatureMap.java" />
@@ -168,6 +185,9 @@
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java" />
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java" />
         <option value="$PROJECT_DIR$/src/model/Temperature.java" />
+        <option value="$PROJECT_DIR$/src/model/TemperatureUnicode.java" />
+        <option value="$PROJECT_DIR$/src/model/Scale.java" />
+        <option value="$PROJECT_DIR$/src/gui/AppStart.java" />
       </list>
     </option>
   </component>
@@ -468,7 +488,7 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -535,32 +555,9 @@
         <state line="33" column="29" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6672598" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/TemperatureUnicode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/AppStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TemperatureMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="50" selection-start="861" selection-end="861" vertical-scroll-proportion="-0.18817204">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Gui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="31" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -595,10 +592,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/TemperatureUnicode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Gui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="31" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -611,10 +624,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.02014218">
+        <state line="11" column="31" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AppStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="47" selection-start="197" selection-end="197" vertical-scroll-proportion="0.3148148">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

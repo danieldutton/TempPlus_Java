@@ -62,10 +62,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gui.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/Gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="31" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0">
+            <state line="158" column="8" selection-start="5225" selection-end="5225" vertical-scroll-proportion="0.08239701">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemperatureMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/TemperatureMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="50" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,10 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppStart.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AppStart.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/AppStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="197" selection-end="197" vertical-scroll-proportion="0.3148148">
+            <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,19 +142,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FahrenheitToKelvin.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Temperature.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+            <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -181,13 +183,13 @@
         <option value="$PROJECT_DIR$/src/tests_unit/ParameterisedTests.java" />
         <option value="$PROJECT_DIR$/src/gui/TemperatureMap.java" />
         <option value="$PROJECT_DIR$/src/gui/GraphPanel.java" />
-        <option value="$PROJECT_DIR$/src/gui/Gui.java" />
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java" />
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java" />
         <option value="$PROJECT_DIR$/src/model/Temperature.java" />
         <option value="$PROJECT_DIR$/src/model/TemperatureUnicode.java" />
         <option value="$PROJECT_DIR$/src/model/Scale.java" />
         <option value="$PROJECT_DIR$/src/gui/AppStart.java" />
+        <option value="$PROJECT_DIR$/src/gui/Gui.java" />
       </list>
     </option>
   </component>
@@ -488,7 +490,7 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,15 +557,6 @@
         <state line="33" column="29" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6672598" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/TemperatureMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="50" selection-start="861" selection-end="861" vertical-scroll-proportion="-0.18817204">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="60" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
@@ -592,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/TemperatureUnicode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="4" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
@@ -606,9 +592,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Gui.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="31" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.0">
+        <state line="11" column="31" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/AppStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -624,16 +624,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/TemperatureMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="40" column="50" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/AppStart.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="197" selection-end="197" vertical-scroll-proportion="0.3148148">
+        <state line="158" column="8" selection-start="5225" selection-end="5225" vertical-scroll-proportion="0.08239701">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

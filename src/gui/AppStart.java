@@ -10,7 +10,7 @@ public class AppStart {
 
         final Scale scale = new Scale(-150, 150);
 
-        final Temperature temperatures = new Temperature(0.00f, 0.00f, 0.00f);
+        final Temperature temperatures = new Temperature(0.00, 0.00, 0.00);
 
 		Runnable runner = new Runnable(){
 			public void run(){

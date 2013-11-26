@@ -1,6 +1,5 @@
 package model;
 
-
 public class Temperature {
 
     private double fahrenheit;
@@ -18,23 +17,11 @@ public class Temperature {
         return fahrenheit;
     }
 
-    public void setFahrenheit(double fahrenheit) {
-        this.fahrenheit = fahrenheit;
-    }
-
     public double getCelsius() {
         return celsius;
     }
 
-    public void setCelsius(double celcius) {
-        this.celsius = celcius;
-    }
-
     public double getKelvin() {
         return kelvin;
-    }
-
-    public void setKelvin(double kelvin) {
-        this.kelvin = kelvin;
     }
 }

@@ -6,7 +6,7 @@ public class FahrenheitToCelsius implements IConversionFormula {
 
     public double Convert(double fahrenheitTemp, boolean isRounded) {
 
-        if(isRounded)
+        if(!isRounded)
             return ((fahrenheitTemp - 32) * 5/9);
 
         else

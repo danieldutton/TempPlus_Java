@@ -1,9 +1,6 @@
 package gui;
 
 import model.Temperature;
-import observer.Observer;
-import observer.Subject;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -23,13 +20,10 @@ import java.awt.*;
             this.temperature = temperature;
         }
 
-
-
 		public void paintComponent(Graphics g){
 
-			this.setBackground(Color.black);
-
-			super.paintComponent(g);
+			setBackground(Color.black);
+            super.paintComponent(g);
 
 			if(temperature.getFahrenheit() < 0)
 				drawFahrenheitBarNeg(g);
@@ -43,7 +37,8 @@ import java.awt.*;
 				drawCelciusBarPos(g);
 			if(temperature.getKelvin() > 0)
 				drawKelvinBarPos(g);
-			repaint();
+
+            repaint();
 		}
 
 		public void drawFahrenheitBarPos(Graphics g){
@@ -76,7 +71,7 @@ import java.awt.*;
 			g.fillRect(NEG_X_START,58,(int)temperature.getFahrenheit() / DIVIDER, 7);
 		}
 
-        public void update(Temperature temperature) {
+        public void setTemperature(Temperature temperature) {
            this.temperature = temperature;
         }
     }

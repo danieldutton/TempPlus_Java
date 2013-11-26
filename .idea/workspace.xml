@@ -93,19 +93,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FahrenheitToKelvin.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
+      <file leaf-file-name="IConversionFormula.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/interfaces/IConversionFormula.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="355" selection-end="355" vertical-scroll-proportion="0.3655914">
+            <state line="4" column="66" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Temperature.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TemperatureConverter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/TemperatureConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="66" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scale.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FahrenheitToKelvin.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="60" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Temperature.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.02014218">
               <folding />
             </state>
           </provider>
@@ -128,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/logic/interfaces/IConversionFormula.java" />
         <option value="$PROJECT_DIR$/src/logic/TemperatureConverter.java" />
         <option value="$PROJECT_DIR$/src/unitTests/ParameterisedTests.java" />
-        <option value="$PROJECT_DIR$/src/model/Temperature.java" />
         <option value="$PROJECT_DIR$/src/observer/Observer.java" />
         <option value="$PROJECT_DIR$/src/gui/AppStart.java" />
         <option value="$PROJECT_DIR$/src/tests_unit/FahrenheitToCelsiusShould.java" />
@@ -141,6 +167,7 @@
         <option value="$PROJECT_DIR$/src/gui/Gui.java" />
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java" />
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java" />
+        <option value="$PROJECT_DIR$/src/model/Temperature.java" />
       </list>
     </option>
   </component>
@@ -239,68 +266,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,9 +466,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,11 +520,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/logic/TemperatureConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="66" selection-start="421" selection-end="421" vertical-scroll-proportion="0.39323843" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests_unit/FahrenheitToCelsiusShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="34" selection-start="173" selection-end="173" vertical-scroll-proportion="0.21174377" />
@@ -575,23 +535,9 @@
         <state line="33" column="29" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6672598" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/TemperatureUnicode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/interfaces/IConversionFormula.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="66" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -603,25 +549,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TemperatureMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="50" selection-start="861" selection-end="861" vertical-scroll-proportion="-0.18817204">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/GraphPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -637,6 +567,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="60" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="12" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
@@ -644,9 +581,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
+    <entry file="file://$PROJECT_DIR$/src/logic/interfaces/IConversionFormula.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="60" selection-start="355" selection-end="355" vertical-scroll-proportion="0.3655914">
+        <state line="4" column="66" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logic/TemperatureConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="66" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/GraphPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.02014218">
           <folding />
         </state>
       </provider>

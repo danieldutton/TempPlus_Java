@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Hashtable;
 
-public class TemperatureMap extends Hashtable<Integer, JLabel> {
-
+public class TemperatureMap extends Hashtable<Integer, JLabel>
+{
 	private JLabel lblNegative150;
 	private JLabel lblNegative100;
 	private JLabel lblNegative50;
@@ -17,14 +17,15 @@ public class TemperatureMap extends Hashtable<Integer, JLabel> {
 	private JLabel lblPositive150;
 
 
-	public TemperatureMap(){
+	public TemperatureMap()
+    {
         initLabelValues();
         styleLabels();
 		buildLabelTable();
 	}
 
-    private void initLabelValues(){
-
+    private void initLabelValues()
+    {
         lblNegative150 = new JLabel("-150");
 		lblNegative100 = new JLabel("-100");
 		lblNegative50 = new JLabel("-50");
@@ -36,8 +37,8 @@ public class TemperatureMap extends Hashtable<Integer, JLabel> {
 		lblPositive150 = new JLabel("150");
     }
 
-    private void styleLabels(){
-
+    private void styleLabels()
+    {
         Font font = new Font("Courier",Font.BOLD, 10);
 
 		lblNegative150.setFont(font);
@@ -58,8 +59,8 @@ public class TemperatureMap extends Hashtable<Integer, JLabel> {
 		lblPositive150.setForeground(Color.yellow);
     }
 
-	private void buildLabelTable(){
-
+	private void buildLabelTable()
+    {
 		put(-150, lblNegative150);
 		put(-100, lblNegative100);
 		put(-50, lblNegative50);

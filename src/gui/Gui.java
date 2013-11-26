@@ -6,7 +6,6 @@ import logic.algorithms.FahrenheitToKelvin;
 import model.Scale;
 import model.Temperature;
 import model.TemperatureUnicode;
-
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -15,11 +14,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class Gui {
+public class Gui
+{
     private JFrame frameParent;
 
     private JPanel panelMaster;
-    private JPanel southPanel;
+    private JPanel panelSouth;
     private GraphPanel panelGraph;
 
     private JLabel lblFahrenheitValue;
@@ -33,21 +33,21 @@ public class Gui {
     private JSlider temperatureSlider;
 
     private JCheckBox chkBoxIsRounded;
-    private boolean isTemperatureRounded;
 
     private TemperatureMap temperatureValuesMap;
 
     private Temperature temperature;
-
     private Scale scale;
 
 
-    public Gui(Scale scale, Temperature temperature) {
+    public Gui(Scale scale, Temperature temperature)
+    {
         this.scale = scale;
         this.temperature = temperature;
+
         frameParent = new JFrame();
         panelMaster = new JPanel(new BorderLayout());
-        southPanel = new JPanel();
+        panelSouth = new JPanel();
         panelGraph = new GraphPanel(temperature);
 
         lblFahrenheitUnicode = new JLabel(Character.toString(TemperatureUnicode.DEGREE_F));
@@ -63,33 +63,45 @@ public class Gui {
 
     public void drawGui() {
         setCustomFrameIcon();
-        InitTemperatureSlider();
+        initTemperatureSlider();
         addListeners();
         buildGraphPanel();
-
-        southPanel.add(panelGraph);
-        panelMaster.add(temperatureSlider);
-        panelMaster.setBackground(Color.black);
-        southPanel.setBackground(Color.black);
-
         styleLabels();
         styleIsRoundedCheckBox();
         buildToolTips();
-
-        panelMaster.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-
-        panelMaster.add(BorderLayout.SOUTH, panelGraph);
-        frameParent.add(panelMaster);
-
+        buildMainPanel();
         setParentFrameProperties();
     }
 
-    private void addListeners() {
+    private void setCustomFrameIcon()
+    {
+        java.net.URL imageURL = getClass().getResource("images/t_icon.gif");
+
+        if (imageURL == null) return;
+            Image icon = Toolkit.getDefaultToolkit().getImage(imageURL);
+            frameParent.setIconImage(icon);
+    }
+
+    private void initTemperatureSlider()
+    {
+        temperatureSlider.setLabelTable(temperatureValuesMap);
+        temperatureSlider.setMajorTickSpacing(50);
+        temperatureSlider.setMinorTickSpacing(10);
+        temperatureSlider.setPaintLabels(true);
+        temperatureSlider.setPaintTicks(true);
+        temperatureSlider.setBorder(BorderFactory.createEmptyBorder(2, 10, 0, 0));
+        temperatureSlider.setBackground(Color.black);
+        temperatureSlider.setForeground(Color.white);
+    }
+
+    private void addListeners()
+    {
         temperatureSlider.addChangeListener(new Converter());
         chkBoxIsRounded.addActionListener(new IsRoundedChanged());
     }
 
-    private void buildGraphPanel() {
+    private void buildGraphPanel()
+    {
         panelGraph.setLayout(new GridLayout(4, 4));
         panelGraph.add(lblFahrenheitUnicode);
         panelGraph.add(lblFahrenheitValue);
@@ -100,7 +112,8 @@ public class Gui {
         panelGraph.add(chkBoxIsRounded);
     }
 
-    private void styleLabels() {
+    private void styleLabels()
+    {
         lblCelciusUnicode.setForeground(Color.white);
         lblCelciusUnicode.setToolTipText("Celcius");
         lblFahrenheitUnicode.setForeground(Color.white);
@@ -113,13 +126,34 @@ public class Gui {
         lblKelvinValue.setForeground(Color.white);
     }
 
-    private void buildToolTips() {
+    private void styleIsRoundedCheckBox()
+    {
+        chkBoxIsRounded.setBackground(Color.black);
+        chkBoxIsRounded.setForeground(Color.white);
+        chkBoxIsRounded.setSize(5, 5);
+    }
+
+    private void buildMainPanel()
+    {
+        panelSouth.add(panelGraph);
+        panelMaster.add(temperatureSlider);
+        panelMaster.setBackground(Color.black);
+        panelSouth.setBackground(Color.black);
+        panelMaster.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        panelMaster.add(BorderLayout.SOUTH, panelGraph);
+        frameParent.add(panelMaster);
+    }
+
+    private void buildToolTips()
+    {
         UIManager.put("ToolTip.background", Color.black);
         UIManager.put("ToolTip.foreground", Color.white);
         UIManager.put("ToolTip.font", new Font("trebuchet ms", Font.PLAIN, 10));
     }
 
-    private void setParentFrameProperties() {
+    private void setParentFrameProperties()
+    {
         frameParent.setLocationRelativeTo(null);
         frameParent.setTitle("Temp +");
         frameParent.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -128,34 +162,8 @@ public class Gui {
         frameParent.setVisible(true);
     }
 
-    private void styleIsRoundedCheckBox() {
-        chkBoxIsRounded.setBackground(Color.black);
-        chkBoxIsRounded.setForeground(Color.white);
-        chkBoxIsRounded.setSize(5, 5);
-    }
-
-    private void InitTemperatureSlider() {
-        temperatureSlider.setLabelTable(temperatureValuesMap);
-        temperatureSlider.setMajorTickSpacing(50);
-        temperatureSlider.setMinorTickSpacing(10);
-        temperatureSlider.setPaintLabels(true);
-        temperatureSlider.setPaintTicks(true);
-        temperatureSlider.setBorder(BorderFactory.createEmptyBorder(2, 10, 0, 0));
-        temperatureSlider.setBackground(Color.black);
-        temperatureSlider.setForeground(Color.white);
-    }
-
-    private void setCustomFrameIcon() {
-
-        java.net.URL imageURL = getClass().getResource("images/t_icon.gif");
-
-        if (imageURL != null) {
-            Image icon = Toolkit.getDefaultToolkit().getImage(imageURL);
-            frameParent.setIconImage(icon);
-        }
-    }
-
-    public void displayTemperatures() {
+    private void displayTemperatures()
+    {
         double fahrenheit = temperatureSlider.getValue();
         boolean isRounded = chkBoxIsRounded.isSelected();
 
@@ -168,8 +176,8 @@ public class Gui {
         panelGraph.setTemperature(temperatures);
     }
 
-    public Temperature calculateTemperatures(double fahrenheit, boolean isRounded) {
-
+    private Temperature calculateTemperatures(double fahrenheit, boolean isRounded)
+    {
         TemperatureConverter tempConverterCel = new TemperatureConverter(new FahrenheitToCelsius());
         TemperatureConverter tempConverterKel = new TemperatureConverter(new FahrenheitToKelvin());
 
@@ -179,16 +187,18 @@ public class Gui {
         return new Temperature(fahrenheit, celcius, kelvin);
     }
 
-    public class Converter implements ChangeListener {
-
-        public void stateChanged(ChangeEvent arg0) {
+    private class Converter implements ChangeListener
+    {
+        public void stateChanged(ChangeEvent arg0)
+        {
             displayTemperatures();
         }
     }
 
-    public class IsRoundedChanged implements ActionListener {
-
-        public void actionPerformed(ActionEvent e) {
+    private class IsRoundedChanged implements ActionListener
+    {
+        public void actionPerformed(ActionEvent e)
+        {
             displayTemperatures();
         }
     }

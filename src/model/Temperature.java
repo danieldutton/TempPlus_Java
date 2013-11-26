@@ -1,27 +1,31 @@
 package model;
 
-public class Temperature {
-
+public class Temperature
+{
     private double fahrenheit;
     private double celsius;
     private double kelvin;
 
 
-    public Temperature(double fahrenheit, double celsius, double kelvin){
+    public Temperature(double fahrenheit, double celsius, double kelvin)
+    {
         this.fahrenheit = fahrenheit;
         this.kelvin = kelvin;
         this.celsius = celsius;
     }
 
-    public double getFahrenheit() {
+    public double getFahrenheit()
+    {
         return fahrenheit;
     }
 
-    public double getCelsius() {
+    public double getCelsius()
+    {
         return celsius;
     }
 
-    public double getKelvin() {
+    public double getKelvin()
+    {
         return kelvin;
     }
 }

@@ -1,4 +1,4 @@
-package tests_unit;
+package unitTests.logic;
 
 import logic.algorithms.FahrenheitToKelvin;
 import org.junit.After;

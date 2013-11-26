@@ -16,12 +16,13 @@ import java.awt.*;
 
         private Temperature temperature;
 
-        public GraphPanel(Temperature temperature){
+        public GraphPanel(Temperature temperature)
+        {
             this.temperature = temperature;
         }
 
-		public void paintComponent(Graphics g){
-
+		public void paintComponent(Graphics g)
+        {
 			setBackground(Color.black);
             super.paintComponent(g);
 
@@ -41,37 +42,44 @@ import java.awt.*;
             repaint();
 		}
 
-		public void drawFahrenheitBarPos(Graphics g){
+		private void drawFahrenheitBarPos(Graphics g)
+        {
 			g.setColor(Color.yellow);
 			g.fillRect(POS_X_START, 10,(int)temperature.getFahrenheit() / DIVIDER, BAR_HEIGHT);
 		}
 
-		public void drawCelciusBarPos(Graphics g){
+		private void drawCelciusBarPos(Graphics g)
+        {
 			g.setColor(Color.yellow);
 			g.fillRect(POS_X_START, 34,(int)temperature.getCelsius() / DIVIDER, BAR_HEIGHT);
 		}
 
-		public void drawKelvinBarPos(Graphics g){
+		private void drawKelvinBarPos(Graphics g)
+        {
 			g.setColor(Color.yellow);
 			g.fillRect(POS_X_START, 58,(int)temperature.getKelvin() / DIVIDER, BAR_HEIGHT);
 		}
 
-		public void drawFahrenheitBarNeg(Graphics g){
+		private void drawFahrenheitBarNeg(Graphics g)
+        {
 			g.setColor(Color.red);
 			g.fillRect(NEG_X_START, 10,(int)temperature.getFahrenheit() / DIVIDER, BAR_HEIGHT);
 		}
 
-		public void drawCelciusBarNeg(Graphics g){
+		private void drawCelciusBarNeg(Graphics g)
+        {
 			g.setColor(Color.red);
 			g.fillRect(NEG_X_START, 34, (int)temperature.getCelsius() / DIVIDER, 7);
 		}
 
-		public void drawKelvinBarNeg(Graphics g){
+		private void drawKelvinBarNeg(Graphics g)
+        {
 			g.setColor(Color.red);
 			g.fillRect(NEG_X_START,58,(int)temperature.getFahrenheit() / DIVIDER, 7);
 		}
 
-        public void setTemperature(Temperature temperature) {
+        public void setTemperature(Temperature temperature)
+        {
            this.temperature = temperature;
         }
     }

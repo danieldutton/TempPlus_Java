@@ -25,6 +25,6 @@ public class Scale
 
     public String toString()
     {
-        return "[" + getClass().getName() + "]" + "minimum: " + minimum + "maximum: " + maximum;
+        return "[" + getClass().getName() + "] " + "minimum: " + minimum + " maximum: " + maximum;
     }
 }

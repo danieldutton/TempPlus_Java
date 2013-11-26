@@ -31,7 +31,7 @@ public class Temperature
 
     public String toString()
     {
-        return "[" + getClass().getName() + "]" + "fahrenheit: " + getFahrenheit() + "celsius: "
-                   + getCelsius() + "kelvin: " + getKelvin();
+        return "[" + getClass().getName() + "] " + "Fahrenheit: " + getFahrenheit() + " Celsius: "
+                   + getCelsius() + " Kelvin: " + getKelvin();
     }
 }

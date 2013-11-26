@@ -74,17 +74,28 @@
       <file leaf-file-name="Scale_Should.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unitTests/model/Scale_Should.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+            <state line="12" column="23" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Temperature_Should.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FahrenheitToKelvinShould.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToKelvinShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="26" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Temperature_Should.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/unitTests/model/Temperature_Should.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="10" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.2014218">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,16 +103,16 @@
       <file leaf-file-name="Scale.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="4" selection-start="344" selection-end="477" vertical-scroll-proportion="0.0">
+            <state line="27" column="77" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Temperature.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Temperature.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="19" selection-start="676" selection-end="676" vertical-scroll-proportion="0.6848341">
+            <state line="33" column="47" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,7 +121,7 @@
       <file leaf-file-name="ParameterisedTests.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unitTests/logic/ParameterisedTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="29" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
+            <state line="27" column="24" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,7 +130,7 @@
       <file leaf-file-name="FahrenheitToCelsiusShould.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToCelsiusShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="34" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="120" selection-end="142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,9 +162,9 @@
         <option value="$PROJECT_DIR$/src/gui/AppStart.java" />
         <option value="$PROJECT_DIR$/src/gui/GraphPanel.java" />
         <option value="$PROJECT_DIR$/src/gui/Gui.java" />
+        <option value="$PROJECT_DIR$/src/model/Scale.java" />
         <option value="$PROJECT_DIR$/src/unitTests/model/Scale_Should.java" />
         <option value="$PROJECT_DIR$/src/unitTests/model/Temperature_Should.java" />
-        <option value="$PROJECT_DIR$/src/model/Scale.java" />
         <option value="$PROJECT_DIR$/src/model/Temperature.java" />
       </list>
     </option>
@@ -206,82 +217,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unitTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unitTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Temperature_Converter_Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -310,7 +245,7 @@
       <recent name="unitTests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppStart">
+  <component name="RunManager" selected="JUnit.Temperature_Should.toString_ReturnTheCorrectValue">
     <configuration default="false" name="ParameterisedTests.test" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Temperature_Converter_Java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -377,6 +312,50 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="Scale_Should.toString_ReturnTheCorrectValue" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Temperature_Converter_Java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests.model" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.model.Scale_Should" />
+      <option name="METHOD_NAME" value="toString_ReturnTheCorrectValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Temperature_Should.toString_ReturnTheCorrectValue" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Temperature_Converter_Java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests.model" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.model.Temperature_Should" />
+      <option name="METHOD_NAME" value="toString_ReturnTheCorrectValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -420,6 +399,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="false" name="AppStart" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="gui.AppStart" />
       <option name="VM_PARAMETERS" value="" />
@@ -442,8 +444,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.AppStart" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ParameterisedTests.test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParameterisedTests.testQuotes" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FahrenheitToKelvinTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AppStart" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Scale_Should.toString_ReturnTheCorrectValue" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.Temperature_Should.toString_ReturnTheCorrectValue" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -467,7 +474,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22014475" sideWeight="0.67164177" order="0" side_tool="false" content_ui="tabs" />
@@ -477,6 +483,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -515,185 +522,104 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToKelvinShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="164" selection-end="164" vertical-scroll-proportion="0.12099644" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/interfaces/IConversionFormula.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="1" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/TemperatureConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="4" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="49" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="5" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/TemperatureUnicode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="49" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="49" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TemperatureMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="149" selection-end="149" vertical-scroll-proportion="0.02014218">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="7" column="1" selection-start="149" selection-end="149" vertical-scroll-proportion="0.02014218" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/AppStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="152" selection-end="152" vertical-scroll-proportion="0.18127961">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="9" column="5" selection-start="152" selection-end="152" vertical-scroll-proportion="0.18127961" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/GraphPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="8" selection-start="2083" selection-end="2083" vertical-scroll-proportion="1.6315166">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="81" column="8" selection-start="2083" selection-end="2083" vertical-scroll-proportion="1.6315166" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/Gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unitTests/logic/ParameterisedTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="29" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="21" column="23" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToCelsiusShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="120" selection-end="142" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/unitTests/model/Scale_Should.java">
+    <entry file="file://$PROJECT_DIR$/src/unitTests/logic/ParameterisedTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unitTests/model/Temperature_Should.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+        <state line="27" column="24" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="344" selection-end="477" vertical-scroll-proportion="0.0">
+        <state line="27" column="77" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/unitTests/model/Scale_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToKelvinShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="676" selection-end="676" vertical-scroll-proportion="0.6848341">
+        <state line="33" column="47" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unitTests/model/Temperature_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.2014218">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions />
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Temperature_Converter_Java</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
         </settings>
       </state>
     </states>

@@ -6,7 +6,6 @@ import logic.algorithms.FahrenheitToKelvin;
 import model.Scale;
 import model.Temperature;
 import model.TemperatureUnicode;
-
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -34,6 +33,7 @@ public class Gui
 	private JSlider temperatureSlider;
 
 	private JCheckBox chkBoxIsRounded;
+    private boolean isTemperatureRounded;
 
 	private TemperatureMap temperatureValuesMap;
 
@@ -86,7 +86,6 @@ public class Gui
 
     private void addListeners(){
         temperatureSlider.addChangeListener(new Converter());
-		chkBoxIsRounded.addActionListener(new IsRounded());
     }
 
     private void buildGraphPanel(){
@@ -159,8 +158,6 @@ public class Gui
 
         public void stateChanged(ChangeEvent arg0) {
 
-			temperature.setFahrenheit(temperatureSlider.getValue());
-
             double fahrenheit = temperatureSlider.getValue();
             boolean isRounded = chkBoxIsRounded.isSelected();
 
@@ -169,7 +166,8 @@ public class Gui
 			lblFahrenheitValue.setText(String.valueOf(temperatures.getFahrenheit()));
 			lblCelsiusValue.setText(String.valueOf(temperatures.getCelsius()));
 			lblKelvinValue.setText(String.valueOf(temperatures.getKelvin()));
-            panelGraph.update(temperatures);
+
+            panelGraph.setTemperature(temperatures);
 		}
 
         public Temperature calculateTemperatures(double fahrenheit, boolean isRounded){
@@ -182,18 +180,6 @@ public class Gui
 
             return new Temperature(fahrenheit, celcius, kelvin);
         }
-	}
-
-	public class IsRounded implements ActionListener {
-
-		public void actionPerformed(ActionEvent e) {
-			if(chkBoxIsRounded.isSelected()){
-				//calculate temperatures here
-			}
-			else{
-				//claculate temperatures here
-			}
-		}
 	}
 }
 

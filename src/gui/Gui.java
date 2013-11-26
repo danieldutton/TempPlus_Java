@@ -6,8 +6,6 @@ import logic.algorithms.FahrenheitToKelvin;
 import model.Scale;
 import model.Temperature;
 import model.TemperatureUnicode;
-import observer.Observer;
-import observer.Subject;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -15,16 +13,15 @@ import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.*;
-import java.util.List;
 
-public class Gui implements Subject
+
+public class Gui
 {
-	private JFrame parentFrame;
+	private JFrame frameParent;
 
-	private JPanel masterComponentPanel;
+	private JPanel panelMaster;
 	private JPanel southPanel;
-	private GraphPanel graphPanel;
+	private GraphPanel panelGraph;
 
 	private JLabel lblFahrenheitValue;
 	private JLabel lblCelsiusValue;
@@ -48,10 +45,10 @@ public class Gui implements Subject
 	public Gui(Scale scale, Temperature temperature){
         this.scale = scale;
         this.temperature = temperature;
-		parentFrame = new JFrame();
-		masterComponentPanel = new JPanel(new BorderLayout());
+		frameParent = new JFrame();
+		panelMaster = new JPanel(new BorderLayout());
 		southPanel = new JPanel();
-        graphPanel = new GraphPanel(temperature);
+        panelGraph = new GraphPanel(temperature);
 
 		lblFahrenheitUnicode = new JLabel(Character.toString(TemperatureUnicode.DEGREE_F));
 		lblFahrenheitValue = new JLabel("0");
@@ -67,24 +64,22 @@ public class Gui implements Subject
 	public void drawGui(){
         setCustomFrameIcon();
         InitTemperatureSlider();
-
 		addListeners();
-
 		buildGraphPanel();
-		southPanel.add(graphPanel);
 
-		masterComponentPanel.add(temperatureSlider);
-		masterComponentPanel.setBackground(Color.black);
+		southPanel.add(panelGraph);
+		panelMaster.add(temperatureSlider);
+		panelMaster.setBackground(Color.black);
 		southPanel.setBackground(Color.black);
 
         styleLabels();
 		styleIsRoundedCheckBox();
         buildToolTips();
 
-		masterComponentPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+		panelMaster.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-		masterComponentPanel.add(BorderLayout.SOUTH,graphPanel);
-		parentFrame.add(masterComponentPanel);
+		panelMaster.add(BorderLayout.SOUTH, panelGraph);
+		frameParent.add(panelMaster);
 
 		setParentFrameProperties();
 	}
@@ -95,14 +90,14 @@ public class Gui implements Subject
     }
 
     private void buildGraphPanel(){
-        graphPanel.setLayout(new GridLayout(4,4));
-        graphPanel.add(lblFahrenheitUnicode);
-		graphPanel.add(lblFahrenheitValue);
-		graphPanel.add(lblCelciusUnicode);
-		graphPanel.add(lblCelsiusValue);
-		graphPanel.add(lblKelvinUnicode);
-		graphPanel.add(lblKelvinValue);
-		graphPanel.add(chkBoxIsRounded);
+        panelGraph.setLayout(new GridLayout(4,4));
+        panelGraph.add(lblFahrenheitUnicode);
+		panelGraph.add(lblFahrenheitValue);
+		panelGraph.add(lblCelciusUnicode);
+		panelGraph.add(lblCelsiusValue);
+		panelGraph.add(lblKelvinUnicode);
+		panelGraph.add(lblKelvinValue);
+		panelGraph.add(chkBoxIsRounded);
     }
 
     private void styleLabels(){
@@ -125,12 +120,12 @@ public class Gui implements Subject
     }
 
     private void setParentFrameProperties(){
-        parentFrame.setLocationRelativeTo(null);
-		parentFrame.setTitle("Temp +");
-		parentFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		parentFrame.setSize(310, 195);
-		parentFrame.setResizable(false);
-		parentFrame.setVisible(true);
+        frameParent.setLocationRelativeTo(null);
+		frameParent.setTitle("Temp +");
+		frameParent.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frameParent.setSize(310, 195);
+		frameParent.setResizable(false);
+		frameParent.setVisible(true);
     }
 
     private void styleIsRoundedCheckBox(){
@@ -156,29 +151,8 @@ public class Gui implements Subject
 
         if (imageURL != null) {
             Image icon = Toolkit.getDefaultToolkit().getImage(imageURL);
-            parentFrame.setIconImage(icon);
+            frameParent.setIconImage(icon);
         }
-    }
-
-    private List<Observer> observers = new ArrayList<Observer>();
-
-    public void register(Observer obj) {
-        if(obj == null) throw new NullPointerException("obj");
-        if(!observers.contains(obj)) observers.add(obj);
-    }
-
-    public void unRegister(Observer obj) {
-        observers.remove(obj);
-    }
-
-    public void notifyObservers() {
-        for(Observer obj : observers){
-           obj.update(temperature);
-        }
-    }
-
-    public Object getUpdate(Observer obj) {
-        return "Message";
     }
 
     public class Converter implements ChangeListener {
@@ -195,6 +169,7 @@ public class Gui implements Subject
 			lblFahrenheitValue.setText(String.valueOf(temperatures.getFahrenheit()));
 			lblCelsiusValue.setText(String.valueOf(temperatures.getCelsius()));
 			lblKelvinValue.setText(String.valueOf(temperatures.getKelvin()));
+            panelGraph.update(temperatures);
 		}
 
         public Temperature calculateTemperatures(double fahrenheit, boolean isRounded){
@@ -202,11 +177,10 @@ public class Gui implements Subject
             TemperatureConverter tempConverterCel = new TemperatureConverter(new FahrenheitToCelsius());
             TemperatureConverter tempConverterKel = new TemperatureConverter(new FahrenheitToKelvin());
 
-            double f = temperatureSlider.getValue();
-            double c = tempConverterCel.convert(f, isRounded);
-            double k = tempConverterKel.convert(f, isRounded);
+            double celcius = tempConverterCel.convert(fahrenheit, isRounded);
+            double kelvin = tempConverterKel.convert(fahrenheit, isRounded);
 
-            return new Temperature(f, c, k);
+            return new Temperature(fahrenheit, celcius, kelvin);
         }
 	}
 

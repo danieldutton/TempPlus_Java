@@ -7,10 +7,8 @@ import observer.Subject;
 import javax.swing.*;
 import java.awt.*;
 
-	public class GraphPanel extends JPanel implements Observer
+	public class GraphPanel extends JPanel
     {
-        private Subject topic;
-
 		private static final int BAR_HEIGHT = 7;
 
 		private static final int DIVIDER = 3;
@@ -24,6 +22,8 @@ import java.awt.*;
         public GraphPanel(Temperature temperature){
             this.temperature = temperature;
         }
+
+
 
 		public void paintComponent(Graphics g){
 
@@ -46,12 +46,10 @@ import java.awt.*;
 			repaint();
 		}
 
-
 		public void drawFahrenheitBarPos(Graphics g){
 			g.setColor(Color.yellow);
 			g.fillRect(POS_X_START, 10,(int)temperature.getFahrenheit() / DIVIDER, BAR_HEIGHT);
 		}
-
 
 		public void drawCelciusBarPos(Graphics g){
 			g.setColor(Color.yellow);
@@ -80,9 +78,5 @@ import java.awt.*;
 
         public void update(Temperature temperature) {
            this.temperature = temperature;
-        }
-
-        public void setSubject(Subject sub) {
-            this.topic = sub;
         }
     }

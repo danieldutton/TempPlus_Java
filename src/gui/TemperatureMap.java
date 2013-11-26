@@ -18,7 +18,6 @@ public class TemperatureMap extends Hashtable<Integer, JLabel> {
 
 
 	public TemperatureMap(){
-
         initLabelValues();
         styleLabels();
 		buildLabelTable();
@@ -39,7 +38,7 @@ public class TemperatureMap extends Hashtable<Integer, JLabel> {
 
     private void styleLabels(){
 
-        Font font = new Font("Courier",Font.BOLD,10);
+        Font font = new Font("Courier",Font.BOLD, 10);
 
 		lblNegative150.setFont(font);
 		lblNegative150.setForeground(Color.red);
@@ -61,12 +60,14 @@ public class TemperatureMap extends Hashtable<Integer, JLabel> {
 
 	private void buildLabelTable(){
 
-		this.put(-150, lblNegative150);
-		this.put(-100, lblNegative100);
-		this.put(-50, lblNegative50);
-		this.put(0, lblZero);
-		this.put(50, lblPositive50);
-		this.put(100, lblPositive100);
-		this.put(150, lblPositive150);
+		put(-150, lblNegative150);
+		put(-100, lblNegative100);
+		put(-50, lblNegative50);
+
+        put(0, lblZero);
+
+        put(50, lblPositive50);
+		put(100, lblPositive100);
+		put(150, lblPositive150);
 	}
 }

@@ -28,4 +28,10 @@ public class Temperature
     {
         return kelvin;
     }
+
+    public String toString()
+    {
+        return "[" + getClass().getName() + "]" + "fahrenheit: " + getFahrenheit() + "celsius: "
+                   + getCelsius() + "kelvin: " + getKelvin();
+    }
 }

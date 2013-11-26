@@ -80,10 +80,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Temperature_Should.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Temperature_Should.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unitTests/model/Temperature_Should.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="0.12085308">
+            <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scale.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="4" selection-start="344" selection-end="477" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Temperature.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="19" selection-start="676" selection-end="676" vertical-scroll-proportion="0.6848341">
               <folding />
             </state>
           </provider>
@@ -128,8 +146,6 @@
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToCelsius.java" />
         <option value="$PROJECT_DIR$/src/logic/interfaces/IConversionFormula.java" />
         <option value="$PROJECT_DIR$/src/logic/algorithms/FahrenheitToKelvin.java" />
-        <option value="$PROJECT_DIR$/src/model/Scale.java" />
-        <option value="$PROJECT_DIR$/src/model/Temperature.java" />
         <option value="$PROJECT_DIR$/src/model/TemperatureUnicode.java" />
         <option value="$PROJECT_DIR$/src/gui/TemperatureMap.java" />
         <option value="$PROJECT_DIR$/src/gui/AppStart.java" />
@@ -137,6 +153,8 @@
         <option value="$PROJECT_DIR$/src/gui/Gui.java" />
         <option value="$PROJECT_DIR$/src/unitTests/model/Scale_Should.java" />
         <option value="$PROJECT_DIR$/src/unitTests/model/Temperature_Should.java" />
+        <option value="$PROJECT_DIR$/src/model/Scale.java" />
+        <option value="$PROJECT_DIR$/src/model/Temperature.java" />
       </list>
     </option>
   </component>
@@ -530,20 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/TemperatureUnicode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="49" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
@@ -608,7 +612,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/unitTests/model/Temperature_Should.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="0.12085308">
+        <state line="6" column="8" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Scale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="4" selection-start="344" selection-end="477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Temperature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="19" selection-start="676" selection-end="676" vertical-scroll-proportion="0.6848341">
           <folding />
         </state>
       </provider>

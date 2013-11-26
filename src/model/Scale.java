@@ -22,4 +22,9 @@ public class Scale
     {
         return maximum;
     }
+
+    public String toString()
+    {
+        return "[" + getClass().getName() + "]" + "minimum: " + minimum + "maximum: " + maximum;
+    }
 }

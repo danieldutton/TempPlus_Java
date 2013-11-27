@@ -4,6 +4,9 @@ import logic.algorithms.FahrenheitToCelsius;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import utils.MathRoundable;
+import utils.MathRounder;
+
 import java.util.Arrays;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
@@ -108,5 +111,4 @@ public class FahrenheitToCelcius_Should {
     public void testQuotes(){
         assertEquals(expected, fahrenheitToCelsius.Convert(input, true), DELTA);
     }
-
 }

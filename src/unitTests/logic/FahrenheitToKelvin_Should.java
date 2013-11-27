@@ -17,9 +17,10 @@ public class FahrenheitToKelvin_Should {
     private static FahrenheitToKelvin fahrenheitToKelvin = new FahrenheitToKelvin();
 
     private double input;
-    private double expected;
-    private static final double DELTA = 1e-8;
 
+    private double expected;
+
+    private static final double DELTA = 1e-8;
 
     public FahrenheitToKelvin_Should(double input, double expected){
         this.input = input;

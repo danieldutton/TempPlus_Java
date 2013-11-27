@@ -8,8 +8,9 @@ public class MathRounder implements MathRoundable
     {
         if (places < 0) throw new IllegalArgumentException();
 
-        BigDecimal bd = new BigDecimal(value);
-        bd = bd.setScale(places, BigDecimal.ROUND_HALF_UP);
-        return bd.doubleValue();
+        BigDecimal bigDecimal = new BigDecimal(value);
+        bigDecimal = bigDecimal.setScale(places, BigDecimal.ROUND_HALF_UP);
+
+        return bigDecimal.doubleValue();
     }
 }

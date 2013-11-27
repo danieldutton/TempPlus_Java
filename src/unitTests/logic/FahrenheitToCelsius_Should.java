@@ -12,9 +12,11 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class FahrenheitToCelcius_Should {
+public class FahrenheitToCelsius_Should {
 
-    private static FahrenheitToCelsius fahrenheitToCelsius = new FahrenheitToCelsius();
+    private static MathRoundable mathRounder = new MathRounder();
+
+    private static FahrenheitToCelsius fahrenheitToCelsius = new FahrenheitToCelsius(mathRounder);
 
     private double input;
 
@@ -22,7 +24,7 @@ public class FahrenheitToCelcius_Should {
 
     private static final double DELTA = 1e-8;
 
-    public FahrenheitToCelcius_Should(double input, double expected){
+    public FahrenheitToCelsius_Should(double input, double expected){
         this.input = input;
         this.expected = expected;
     }

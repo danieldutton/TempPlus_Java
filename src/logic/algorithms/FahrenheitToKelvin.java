@@ -8,7 +8,6 @@ public class FahrenheitToKelvin implements IConversionFormula
     {
         if(!isRounded)
             return (fahrenheitTemp + 459.67)/1.8;
-
         else
             return Math.round((fahrenheitTemp + 459.67)/1.8);
     }

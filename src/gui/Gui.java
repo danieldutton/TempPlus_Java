@@ -6,6 +6,8 @@ import logic.algorithms.FahrenheitToKelvin;
 import model.Scale;
 import model.Temperature;
 import model.TemperatureUnicode;
+import utils.MathRounder;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -178,7 +180,7 @@ public class Gui
 
     private Temperature calculateTemperatures(double fahrenheit, boolean isRounded)
     {
-        TemperatureConverter tempConverterCel = new TemperatureConverter(new FahrenheitToCelsius());
+        TemperatureConverter tempConverterCel = new TemperatureConverter(new FahrenheitToCelsius(new MathRounder()));
         TemperatureConverter tempConverterKel = new TemperatureConverter(new FahrenheitToKelvin());
 
         double celcius = tempConverterCel.convert(fahrenheit, isRounded);

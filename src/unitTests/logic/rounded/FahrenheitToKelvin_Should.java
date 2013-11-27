@@ -1,11 +1,13 @@
-package unitTests.logic;
-
+package unitTests.logic.rounded;
 
 import logic.algorithms.FahrenheitToCelsius;
 import logic.algorithms.FahrenheitToKelvin;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import utils.MathRoundable;
+import utils.MathRounder;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,7 +16,9 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class FahrenheitToKelvin_Should {
 
-    private static FahrenheitToKelvin fahrenheitToKelvin = new FahrenheitToKelvin();
+    private static final MathRoundable mathRounder = new MathRounder();
+
+    private static FahrenheitToKelvin fahrenheitToKelvin = new FahrenheitToKelvin(mathRounder);
 
     private double input;
 

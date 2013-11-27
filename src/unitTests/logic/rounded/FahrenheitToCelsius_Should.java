@@ -1,4 +1,4 @@
-package unitTests.logic;
+package unitTests.logic.rounded;
 
 import logic.algorithms.FahrenheitToCelsius;
 import org.junit.Test;

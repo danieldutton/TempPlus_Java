@@ -181,7 +181,7 @@ public class Gui
     private Temperature calculateTemperatures(double fahrenheit, boolean isRounded)
     {
         TemperatureConverter tempConverterCel = new TemperatureConverter(new FahrenheitToCelsius(new MathRounder()));
-        TemperatureConverter tempConverterKel = new TemperatureConverter(new FahrenheitToKelvin());
+        TemperatureConverter tempConverterKel = new TemperatureConverter(new FahrenheitToKelvin(new MathRounder()));
 
         double celcius = tempConverterCel.convert(fahrenheit, isRounded);
         double kelvin = tempConverterKel.convert(fahrenheit, isRounded);

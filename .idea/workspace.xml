@@ -62,10 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FahrenheitToCelcius_Should.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/unitTests/FahrenheitToCelcius_Should.java">
+      <file leaf-file-name="FahrenheitToKelvin_Should.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToKelvin_Should.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
+            <state line="22" column="4" selection-start="567" selection-end="567" vertical-scroll-proportion="0.45665446">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,18 +76,7 @@
       <file leaf-file-name="FahrenheitToCelcius_Should.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToCelcius_Should.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="5" selection-start="338" selection-end="7027" vertical-scroll-proportion="-29.36">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FahrenheitToKelvin_Should.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToKelvin_Should.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="12" selection-start="5411" selection-end="5411" vertical-scroll-proportion="0.36611375">
+            <state line="10" column="0" selection-start="261" selection-end="290" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -333,29 +322,7 @@
       <recent name="unitTests.logic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FahrenheitToCelcius_Should">
-    <configuration default="false" name="Temperature_Should.toString_ReturnTheCorrectValue" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Temperature_Converter_Java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests.model" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.model.Temperature_Should" />
-      <option name="METHOD_NAME" value="toString_ReturnTheCorrectValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.FahrenheitToKelvin_Should">
     <configuration default="false" name="FahrenheitToCelcius_Should.data" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Temperature_Converter_Java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -404,8 +371,8 @@
       <module name="Temperature_Converter_Java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests.logic" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.logic.FahrenheitToCelcius_Should" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.FahrenheitToCelcius_Should" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -430,6 +397,28 @@
       <option name="MAIN_CLASS_NAME" value="unitTests.logic.FahrenheitToCelcius_Should" />
       <option name="METHOD_NAME" value="data" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FahrenheitToKelvin_Should" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Temperature_Converter_Java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests.logic" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.logic.FahrenheitToKelvin_Should" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -563,11 +552,11 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ParameterisedTests.testQuotes" />
       <item index="1" class="java.lang.String" itemvalue="Application.AppStart" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Temperature_Should.toString_ReturnTheCorrectValue" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParameterisedTests.data" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParameterisedTests" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FahrenheitToCelcius_Should" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.FahrenheitToCelcius_Should.data" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParameterisedTests.data" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParameterisedTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FahrenheitToCelcius_Should" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.FahrenheitToCelcius_Should.data" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.FahrenheitToKelvin_Should" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -613,9 +602,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2092883" sideWeight="0.6865672" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2092883" sideWeight="0.69919634" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39954075" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3065442" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30080366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -733,15 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/unitTests/FahrenheitToCelcius_Should.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.8.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="76" selection-start="5946" selection-end="5946" vertical-scroll-proportion="0.7789855">
@@ -749,9 +729,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/unitTests/FahrenheitToCelcius_Should.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="243" selection-end="243" vertical-scroll-proportion="0.26288658">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToCelcius_Should.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="5" selection-start="338" selection-end="7027" vertical-scroll-proportion="-29.36">
+        <state line="10" column="0" selection-start="261" selection-end="290" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,7 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/unitTests/logic/FahrenheitToKelvin_Should.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="12" selection-start="5411" selection-end="5411" vertical-scroll-proportion="0.36611375">
+        <state line="22" column="4" selection-start="567" selection-end="567" vertical-scroll-proportion="0.45665446">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

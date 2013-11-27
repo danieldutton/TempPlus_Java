@@ -25,13 +25,15 @@ public class FahrenheitToCelsius_Should {
 
     private static final double DELTA = 1e-8;
 
-    public FahrenheitToCelsius_Should(double input, double expected){
+    public FahrenheitToCelsius_Should(double input, double expected)
+    {
         this.input = input;
         this.expected = expected;
     }
 
     @Parameterized.Parameters
-    public static List<Object[]> data(){
+    public static List<Object[]> data()
+    {
         return Arrays.asList(new Object[][]{
 
                 // -150F to -100 F
@@ -111,7 +113,8 @@ public class FahrenheitToCelsius_Should {
     }
 
     @Test
-    public void testQuotes(){
+    public void testQuotes()
+    {
         assertEquals(expected, fahrenheitToCelsius.Convert(input, false), DELTA);
     }
 }

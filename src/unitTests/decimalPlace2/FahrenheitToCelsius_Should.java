@@ -9,7 +9,6 @@ import utils.MathRoundable;
 import utils.MathRounder;
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -113,8 +112,8 @@ public class FahrenheitToCelsius_Should {
     }
 
     @Test
-    public void testQuotes()
+    public void convert_ConvertFahrenheitToCelsiusCorrectly()
     {
-        assertEquals(expected, fahrenheitToCelsius.Convert(input, false), DELTA);
+        assertEquals(expected, fahrenheitToCelsius.convert(input, false), DELTA);
     }
 }

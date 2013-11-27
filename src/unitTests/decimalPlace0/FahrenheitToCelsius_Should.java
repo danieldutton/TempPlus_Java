@@ -6,14 +6,13 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import utils.MathRoundable;
 import utils.MathRounder;
-
 import java.util.Arrays;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class FahrenheitToCelsius_Should {
-
+public class FahrenheitToCelsius_Should
+{
     private static MathRoundable mathRounder = new MathRounder();
 
     private static FahrenheitToCelsius fahrenheitToCelsius = new FahrenheitToCelsius(mathRounder);
@@ -24,13 +23,15 @@ public class FahrenheitToCelsius_Should {
 
     private static final double DELTA = 1e-8;
 
-    public FahrenheitToCelsius_Should(double input, double expected){
+    public FahrenheitToCelsius_Should(double input, double expected)
+    {
         this.input = input;
         this.expected = expected;
     }
 
     @Parameterized.Parameters
-    public static List<Object[]>data(){
+    public static List<Object[]>data()
+    {
         return Arrays.asList(new Object[][]{
 
              // -150F to -100 F
@@ -110,7 +111,8 @@ public class FahrenheitToCelsius_Should {
     }
 
     @Test
-    public void testQuotes(){
-        assertEquals(expected, fahrenheitToCelsius.Convert(input, true), DELTA);
+    public void convert_ConvertFahrenheitToCelsiusCorrectly()
+    {
+        assertEquals(expected, fahrenheitToCelsius.convert(input, true), DELTA);
     }
 }

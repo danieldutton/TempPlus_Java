@@ -11,7 +11,7 @@ public class FahrenheitToCelsius implements IConversionFormula
         this.mathRounder = mathRounder;
     }
 
-    public double Convert(double fahrenheitTemp, boolean isRounded)
+    public double convert(double fahrenheitTemp, boolean isRounded)
     {
         if(!isRounded)
             return mathRounder.round(((fahrenheitTemp - 32) * 5/9), 2);

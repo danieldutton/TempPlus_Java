@@ -114,8 +114,8 @@ public class FahrenheitToKelvin_Should
     }
 
     @Test
-    public void testQuotes()
+    public void convert_ConvertFahrenheitToKelvinCorrectly()
     {
-        assertEquals(expected, fahrenheitToKelvin.Convert(input, false), DELTA);
+        assertEquals(expected, fahrenheitToKelvin.convert(input, false), DELTA);
     }
 }

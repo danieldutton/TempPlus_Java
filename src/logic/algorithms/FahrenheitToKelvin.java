@@ -11,7 +11,7 @@ public class FahrenheitToKelvin implements IConversionFormula
         this.mathRounder = mathRounder;
     }
 
-    public double Convert(double fahrenheitTemp, boolean isRounded)
+    public double convert(double fahrenheitTemp, boolean isRounded)
     {
         if(!isRounded)
             return mathRounder.round(((fahrenheitTemp + 459.67)/1.8),2);

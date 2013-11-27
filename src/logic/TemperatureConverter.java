@@ -14,6 +14,6 @@ public class TemperatureConverter
 
     public double convert(double fahrenheitTemp, boolean isRounded)
     {
-        return conversionFormula.Convert(fahrenheitTemp, isRounded);
+        return conversionFormula.convert(fahrenheitTemp, isRounded);
     }
 }

@@ -1,20 +1,18 @@
 package unitTests.decimalPlace0;
 
-import logic.algorithms.FahrenheitToCelsius;
 import logic.algorithms.FahrenheitToKelvin;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import utils.MathRoundable;
 import utils.MathRounder;
-
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class FahrenheitToKelvin_Should {
+public class FahrenheitToKelvin_Should
+{
 
     private static final MathRoundable mathRounder = new MathRounder();
 
@@ -26,13 +24,15 @@ public class FahrenheitToKelvin_Should {
 
     private static final double DELTA = 1e-8;
 
-    public FahrenheitToKelvin_Should(double input, double expected){
+    public FahrenheitToKelvin_Should(double input, double expected)
+    {
         this.input = input;
         this.expected = expected;
     }
 
     @Parameterized.Parameters
-    public static List<Object[]>data(){
+    public static List<Object[]>data()
+    {
         return Arrays.asList(new Object[][]{
 
              // -150F to -100 F
@@ -112,7 +112,8 @@ public class FahrenheitToKelvin_Should {
     }
 
     @Test
-    public void testQuotes(){
-        assertEquals(expected, fahrenheitToKelvin.Convert(input, true), DELTA);
+    public void convert_ConvertFahrenheitToKelvinCorrectly()
+    {
+        assertEquals(expected, fahrenheitToKelvin.convert(input, true), DELTA);
     }
 }

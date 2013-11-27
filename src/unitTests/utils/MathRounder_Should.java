@@ -22,8 +22,14 @@ public class MathRounder_Should
         sut = new MathRounder();
     }
 
+    @Test(expected=IllegalArgumentException.class)
+    public void round_throwAnIllegalArgumentExceptionIfPlacesParamIsLessThanZero()
+    {
+        sut.round(numToRoundUp, -3);
+    }
+
     @Test
-    public void roundCorrectlyUp_ZeroDP()
+    public void round_roundCorrectlyUp_ZeroDP()
     {
         final double expected = 3.0;
         double actual = sut.round(numToRoundUp, 0);
@@ -32,7 +38,7 @@ public class MathRounder_Should
     }
 
     @Test
-    public void roundCorrectlyDown_ZeroDP()
+    public void round_roundCorrectlyDown_ZeroDP()
     {
         final double expected = 2.0;
         double actual = sut.round(numToRoundDown, 0);
@@ -41,7 +47,7 @@ public class MathRounder_Should
     }
 
     @Test
-    public void roundCorrectlyUp_OneDP()
+    public void round_roundCorrectlyUp_OneDP()
     {
         final double expected = 2.6;
         double actual = sut.round(numToRoundUp, 1);
@@ -50,7 +56,7 @@ public class MathRounder_Should
     }
 
     @Test
-    public void roundCorrectlyDown_OneDP()
+    public void round_roundCorrectlyDown_OneDP()
     {
         final double expected = 2.4;
         double actual = sut.round(numToRoundDown, 1);
@@ -59,7 +65,7 @@ public class MathRounder_Should
     }
 
     @Test
-    public void roundCorrectlyUp_TwoDP()
+    public void round_roundCorrectlyUp_TwoDP()
     {
         final double expected = 2.58;
         double actual = sut.round(numToRoundUp, 2);
@@ -68,7 +74,7 @@ public class MathRounder_Should
     }
 
     @Test
-    public void roundCorrectlyDown_TwoDP()
+    public void round_roundCorrectlyDown_TwoDP()
     {
         final double expected = 2.43;
         double actual = sut.round(numToRoundDown, 2);
